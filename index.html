@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tricky tricky hallowwen - The Ultimate Meme Experience</title>
+  <style>
+    /* Reset and Base Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    /* Typography */
+    .meme-style-heading {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .engaging-subheading {
+      font-size: 1.5rem;
+      color: #fff;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .section-title-with-animation {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #333;
+      position: relative;
+      animation: fadeInUp 1s ease;
+    }
+
+    .section-title-with-animation::before {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 50px;
+      height: 3px;
+      background-color: #c62828;
+      animation: growAnimation 1s ease;
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes growAnimation {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 50px;
+      }
+    }
+
+    /* Background Animation */
+    #bg-animation {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: linear-gradient(135deg, #002868, #b22234);
+      background-size: 400% 400%;
+      animation: bgAnimation 15s ease infinite;
+    }
+
+    @keyframes bgAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    /* Layout */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 4rem;
+    }
+
+    /* Interactive Elements */
+    .explore-btn {
+      display: inline-block;
+      padding: 1rem 2rem;
+      background-color: #c62828;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      animation: pulseAnimation 2s infinite;
+    }
+
+    .explore-btn:hover {
+      background-color: #b71c1c;
+    }
+
+    @keyframes pulseAnimation {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .copiable-text {
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .copiable-text:hover {
+      color: #c62828;
+    }
+  </style>
+</head>
+<body>
+  <div id="bg-animation"></div>
+
+  <header>
+    <div class="container">
+      <h1 class="meme-style-heading">Welcome to the World of Tricky tricky hallowwen</h1>
+      <p class="engaging-subheading">Your portal to the most exciting meme-powered cryptocurrency.</p>
+      <a href="#about" class="explore-btn">Explore</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title-with-animation">What is Tricky tricky hallowwen?</h2>
+        <div class="content-block">
+          <img src="./logo.png" alt="About Tricky tricky hallowwen" class="rounded-image-with-shadow">
+          <p>A deep dive into the Tricky tricky hallowwen universe, highlighting its origin, purpose, and unique features. the first and official triky tricky meme of the presidents trump</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="tokenomics">
+      <div class="container">
+        <h2 class="section-title-with-animation">Tokenomics</h2>
+        <div class="data-visualization">
+          <!-- Add your data visualization code here -->
+        </div>
+      </div>
+    </section>
+
+    <section id="how-to-buy">
+      <div class="container">
+        <h2 class="section-title-with-animation">Join the Tricky tricky hallowwen Community - How to Buy</h2>
+        <ol>
+          <li>
+            <h3>Get a Wallet</h3>
+            <p>Download a reputable Ethereum wallet like MetaMask or Trust Wallet.</p>
+          </li>
+          <li>
+            <h3>Acquire ETH</h3>
+            <p>Purchase Ethereum (ETH) from a cryptocurrency exchange.</p>
+          </li>
+          <li>
+            <h3>Connect to a DEX</h3>
+            <p>Connect your wallet to a decentralized exchange like Uniswap or SushiSwap.</p>
+          </li>
+          <li>
+            <h3>Swap ETH for hlw</h3>
+            <p>Use the DEX's swap feature to exchange your ETH for hlw.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="roadmap">
+      <div class="container">
+        <h2 class="section-title-with-animation">The Tricky tricky hallowwen Journey - Our Roadmap</h2>
+        <div class="timeline">
+          <!-- Add your interactive timeline code here -->
+        </div>
+      </div>
+    </section>
+
+    <section id="community">
+      <div class="container">
+        <h2 class="section-title-with-animation">Connect with the Tricky tricky hallowwen Community</h2>
+        <div class="social-links">
+          <a href="{youtube_url}">YouTube</a>
+          <a href="{tiktok_url}">TikTok</a>
+          <!-- Add more social link elements here -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Tricky tricky hallowwen. All rights reserved.</p>
+      <p class="copiable-text">112nj12j123j</p>
+    </div>
+  </footer>
+
+  <script>
+    // Background Animation
+    const bgAnimation = document.getElementById('bg-animation');
+
+    // Copiable Text
+    const copiableText = document.querySelector('.copiable-text');
+    copiableText.addEventListener('click', () => {
+      navigator.clipboard.writeText(copiableText.textContent);
+      alert('Token address copied to clipboard!');
+    });
+
+    // Add your JavaScript code for other interactive elements here
+  </script>
+</body>
+</html>
